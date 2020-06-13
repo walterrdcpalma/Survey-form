@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" href="css/estilos.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,7 @@
       <p id="description">Small survey for the google employees</p>
       <form id="survey-form" class="margin-top" action="">
         <div class="margin-top">
-          <label for="name-label">
+          <label id="name-label" for="name-label">
             Name
             <div class="margin-top">
               <input
@@ -27,7 +28,7 @@
         </div>
 
         <div class="margin-top">
-          <label for="email-label">
+          <label id="email-label" for="email-label">
             Email
             <div class="margin-top">
               <input
@@ -42,15 +43,16 @@
         </div>
 
         <div class="margin-top">
-          <label for="number-label">
+          <label id="number-label" for="number-label">
             Age(Optional)
             <div class="margin-top">
               <input
                 class="round-border"
-                id="age"
+                id="number"
                 type="number"
                 min="10"
                 max="150"
+                pattern="“^[0–9]$”"
                 placeholder="Enter your Age"
               />
             </div>
@@ -130,7 +132,7 @@
         </div>
 
         <div class="margin-top">
-          <button id="form-button" class="round-border" type="submit">
+          <button id="submit" class="round-border" type="submit">
             Submit
           </button>
         </div>

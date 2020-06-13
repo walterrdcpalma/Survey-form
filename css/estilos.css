@@ -37,7 +37,11 @@ label > .margin-top {
   border-radius: 5px;
 }
 
-#name, #email, #age, #dropdown, #form-button{
+#name,
+#email,
+#age,
+#dropdown,
+#submit {
   width: 100%;
   height: 40px;
 }
@@ -46,12 +50,10 @@ label > .margin-top {
   width: 100%;
 }
 
-#form-button{
+#submit {
   background-color: grey;
   color: white;
-  
 }
-
 
 /* MEDIA QUERIE */
 
