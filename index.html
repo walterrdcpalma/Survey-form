@@ -1,9 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/estilos.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div id="survey-block">
+      <h1 id="title">Survey for google</h1>
+      <p id="description">Small survey for the google employees</p>
+      <form id="survey-form" class="margin-top" action="">
+        <div class="margin-top">
+          <label for="name-label">
+            Name
+            <div class="margin-top">
+              <input
+                id="name"
+                class="round-border"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </label>
+        </div>
+
+        <div class="margin-top">
+          <label for="email-label">
+            Email
+            <div class="margin-top">
+              <input
+                id="email"
+                class="round-border"
+                type="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+          </label>
+        </div>
+
+        <div class="margin-top">
+          <label for="number-label">
+            Age(Optional)
+            <div class="margin-top">
+              <input
+                class="round-border"
+                id="age"
+                type="number"
+                min="10"
+                max="150"
+                placeholder="Enter your Age"
+              />
+            </div>
+          </label>
+        </div>
+
+        <div class="margin-top">
+          <label for="role-label"
+            >Which option best describes your current role?
+            <div class="margin-top">
+              <select class="round-border" name="role" id="dropdown" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="estudante">Estudante</option>
+                <option value="trabalhador">Trabalhador</option>
+                <option value="reformado">Reformado</option>
+              </select>
+            </div>
+          </label>
+        </div>
+
+        <fieldset class="margin-top" id="recomend-fieldset">
+          <legend>Would you recommend this survey?</legend>
+          <div>
+            <label for="definitely"
+              >Definitely<input
+                id="definitely"
+                type="radio"
+                name="name"
+                value="definitely"
+                required
+            /></label>
+          </div>
+
+          <div>
+            <label for="maybe"
+              >Maybe<input id="maybe" type="radio" name="name" value="maybe"
+            /></label>
+          </div>
+
+          <div>
+            <label for="never"
+              >Never<input id="never" type="radio" name="name" value="never"
+            /></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="margin-top" id="color-fieldset">
+          <legend>Whats your favorite color?</legend>
+          <div>
+            <label for="black"
+              >Black <input type="checkbox" name="color" value="black" required
+            /></label>
+          </div>
+
+          <div>
+            <label for="white"
+              >White <input type="checkbox" name="color" value="white"
+            /></label>
+          </div>
+
+          <div>
+            <label for="blue"
+              >Blue <input type="checkbox" name="color" value="blue"
+            /></label>
+          </div>
+        </fieldset>
+
+        <div class="margin-top">
+          <textarea
+            name="comment-section"
+            class="round-border"
+            id="comment-section"
+            cols="30"
+            rows="10"
+            placeholder="Write here any additional comments"
+          ></textarea>
+        </div>
+
+        <div class="margin-top">
+          <button id="form-button" class="round-border" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
